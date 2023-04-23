@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sutter_TriviaGame", "Sutter_TriviaGame\Sutter_TriviaGame.csproj", "{09AA42FE-4D5F-433C-A4F4-DCEA37050994}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A0F368D-1C15-45F5-9651-83A29B880908}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09AA42FE-4D5F-433C-A4F4-DCEA37050994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09AA42FE-4D5F-433C-A4F4-DCEA37050994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09AA42FE-4D5F-433C-A4F4-DCEA37050994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09AA42FE-4D5F-433C-A4F4-DCEA37050994}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C875755-2989-482E-A346-C11021BE2716}
+	EndGlobalSection
+EndGlobal
