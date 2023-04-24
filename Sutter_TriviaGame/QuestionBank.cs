@@ -33,7 +33,7 @@ namespace Sutter_TriviaGame
         {
             return questionBank[questionNum].QuestionText;
         }
-        public void ReadQuestionFile()
+        public void ReadQuestion()
         {
             StreamReader inFile;
             string question;
@@ -42,7 +42,7 @@ namespace Sutter_TriviaGame
             string explanation;
 
             inFile = new StreamReader(fileName);
-            //Console.WriteLine(inFile.ReadLine());
+            
 
             for (int i = 0; i < questionBank.Length; i++)
             {

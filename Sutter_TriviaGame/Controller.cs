@@ -18,14 +18,13 @@ namespace Sutter_TriviaGame
 
             try
             {
-                qBank.ReadQuestionFile();
+                qBank.ReadQuestion();
             }
-            catch (FileNotFoundException ex)
+            catch (FileNotFoundException e)
             {
-                //Environment.Exit(1);
-                Console.WriteLine("File not found: " + ex.Message);
+                Console.WriteLine("File not found: " + e.Message);
             }
-            //Console.WriteLine(qBank);
+            
 
             do
             {
@@ -45,12 +44,12 @@ namespace Sutter_TriviaGame
 
                     if (!string.IsNullOrEmpty(response) && response.ToUpper()[0] == qBank.GetCorrectAnswer(i))
                     {
-                        WriteLine("\nYou are correct!");
+                        WriteLine("\n\nYou are correct!");
                         correct++;
                     }
                     else
                     {
-                        WriteLine("\nSorry you are wrong");
+                        WriteLine("\n\nSorry you are wrong");
                         WriteLine("The correct answer is " + qBank.GetCorrectAnswer(i));
                     }
                     WriteLine("\n" + qBank.GetExplanation(i));
@@ -64,20 +63,20 @@ namespace Sutter_TriviaGame
         }
         public bool PlayAgain()
         {
-            bool again = false;
-            string resp;
+            bool playAgain = false;
+            string input;
 
             Write("\n\nWould you like to play again? (Y or N): ");
-            resp = ReadLine();
+            input = ReadLine();
 
-            if (!string.IsNullOrEmpty(resp))
+            if (!string.IsNullOrEmpty(input))
             {
-                if (resp.ToUpper()[0] == 'Y')
+                if (input.ToUpper()[0] == 'Y')
                 {
-                    again = true;
+                    playAgain = true;
                 }
             }
-            return again;
+            return playAgain;
         }
         public void Welcome()
         {
